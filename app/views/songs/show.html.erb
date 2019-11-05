@@ -1,0 +1,5 @@
+<h3><%= @song.name %></h3> 
+<p>Performed by: <%= @song.artist.name %></p>
+<p>Genre: <%= @song.genre.name %></p><br>
+<br><%= link_to 'Edit Song', edit_song_path %> | <%= link_to "Delete", song_path(@song), :method => :delete %> </p>
+
