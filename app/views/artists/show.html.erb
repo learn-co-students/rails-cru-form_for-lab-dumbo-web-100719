@@ -1,0 +1,18 @@
+<h1><%= @artist.name %></h1>
+<p>Bio: <%=@artist.bio %><br></p> 
+<h2>Songs</h2>
+<% @artist.songs.each do |song| %>
+    <li>
+        <%= song.name %>
+    </li>
+<% end %><br>
+<h3>Genres</h3>
+<% @artist.genres.each do |genre| %>
+    <li>
+        <%= genre.name %>
+    </li>
+<% end %><br>
+<br><%= link_to 'Edit Artist', edit_artist_path %> | <%= link_to "Delete", artist_path(@artist), :method => :delete %> </p>
+
+
+
