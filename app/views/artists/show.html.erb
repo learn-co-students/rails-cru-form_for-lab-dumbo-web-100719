@@ -1,0 +1,9 @@
+<h1><%= @artist.name %>'s Page</h1>
+
+<p><%= @artist.bio %></p>
+
+<p><%= link_to 'Edit', edit_artist_path(@artist) %></p>
+
+<%= button_to "Delete", @artist, method: :delete%> 
+
+<p><%= link_to 'All Artists', artists_path %></p>
