@@ -1,0 +1,8 @@
+<h1><%=@song.name%></h1>
+
+<h2>Song Genre</h2>
+<%= link_to @song.genre.name, @song.genre%>
+<h2>Song Artist</h2>
+<%= link_to @song.artist.name, @song.artist%>
+<%= button_to "Delete Song", @song, method: :delete%>
+<%= link_to "All Songs", songs_path%>
