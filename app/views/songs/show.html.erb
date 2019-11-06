@@ -1,0 +1,6 @@
+<h1>My Song:</h1>
+<%=@song.name%> <br>
+<%=link_to "#{@song.artist.name}", @song.artist%> <br>
+<%=link_to "#{@song.genre.name}", @song.genre%>
+
+<%= button_to "Songs", @songs, action: "index" %>
